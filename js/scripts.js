@@ -1,13 +1,11 @@
 $(document).ready(function() {
-  $("button#hello").click(function() {
-    $("ul").prepend("<li>Hello!</li>");
+  $("button#meow").click(function() {
+    $("ul#cat").prepend("<li>Meow!</li>");
+    $("ul#dog").prepend("<li>Bark!</li>");
   });
 
-  $("button#goodbye").click(function() {
-    $("ul").prepend("<li>Goodbye!</li>");
-  });
-
-  $("button#stop").click(function() {
-    $("ul").prepend("<li>Stop copying me!</li>");
+  $("button#bark").click(function() {
+    $("ul#dog").prepend("<li>Bark!</li>");
+    $("ul#cat").prepend("<li>Meow!</li>");
   });
 });
