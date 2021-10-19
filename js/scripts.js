@@ -8,4 +8,10 @@ $(document).ready(function() {
     $("ul#dog").prepend("<li>Bark!</li>");
     $("ul#cat").prepend("<li>Meow!</li>");
   });
+
+  $("div.row").click(function(){
+    $("col-md-6").before("IMAGE");
+    $(this).remove();
+  })
+    
 });
